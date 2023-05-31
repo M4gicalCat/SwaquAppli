@@ -11,8 +11,19 @@ struct Swallower: Codable {
     let id: Int
     let username: String
     let gorgees: Int
-    let token: String
 }
+
+struct SmallSwallower: Codable {
+    let id: Int
+    let username: String
+}
+
+struct SwallowerResponse: Codable {
+    let token: String
+    let swallower: SmallSwallower
+}
+
+
 
 struct AuthError: Codable {
     let message: String

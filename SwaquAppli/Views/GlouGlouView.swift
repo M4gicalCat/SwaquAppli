@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GlouGlouView: View {
+    @AppStorage("jwt") var jwt: String = ""
     var body: some View {
         
         ZStack{
@@ -88,6 +89,16 @@ struct GlouGlouView: View {
                                 .cornerRadius(10)
                         }
                         .frame(maxWidth: .infinity)
+                Button(action: {
+                    jwt = ""
+                }) {
+                    Text("suppprime ton token malheureux")
+                        .font(.headline)
+                        .padding()
+                        .background(Color.init(red:23/255,green: 54/255, blue: 99/255))
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
             }
             .frame(maxWidth: .infinity)
             .padding()

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		484B137C2A02AD1C00C8B5B5 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B137B2A02AD1C00C8B5B5 /* Test.swift */; };
 		48A3A01029D460EA0035D188 /* SwaquAppliApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A3A00F29D460EA0035D188 /* SwaquAppliApp.swift */; };
-		48A3A01229D460EA0035D188 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A3A01129D460EA0035D188 /* ContentView.swift */; };
 		48A3A01429D460EC0035D188 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A3A01329D460EC0035D188 /* Assets.xcassets */; };
 		48A3A01729D460EC0035D188 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A3A01629D460EC0035D188 /* Preview Assets.xcassets */; };
 		48A3A02029D468A30035D188 /* ConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A3A01F29D468A30035D188 /* ConnectionView.swift */; };
@@ -24,7 +23,6 @@
 		484B137B2A02AD1C00C8B5B5 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		48A3A00C29D460EA0035D188 /* SwaquAppli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwaquAppli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A3A00F29D460EA0035D188 /* SwaquAppliApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwaquAppliApp.swift; sourceTree = "<group>"; };
-		48A3A01129D460EA0035D188 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		48A3A01329D460EC0035D188 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48A3A01629D460EC0035D188 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		48A3A01F29D468A30035D188 /* ConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionView.swift; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 				48A3A01E29D468060035D188 /* Model */,
 				48A3A01D29D467F90035D188 /* Views */,
 				48A3A00F29D460EA0035D188 /* SwaquAppliApp.swift */,
-				48A3A01129D460EA0035D188 /* ContentView.swift */,
 				48A3A01329D460EC0035D188 /* Assets.xcassets */,
 				48A3A01529D460EC0035D188 /* Preview Content */,
 			);
@@ -176,7 +173,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D146BCFF2A277397006AD6D5 /* Swallower.swift in Sources */,
-				48A3A01229D460EA0035D188 /* ContentView.swift in Sources */,
 				48A3A02029D468A30035D188 /* ConnectionView.swift in Sources */,
 				D146BD032A2790A9006AD6D5 /* CreateAccountView.swift in Sources */,
 				484B137C2A02AD1C00C8B5B5 /* Test.swift in Sources */,

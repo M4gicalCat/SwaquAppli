@@ -16,7 +16,7 @@ struct SwaquAppliApp: App {
             if navigateToHomeView {
                 GlouGlouView()
             } else {
-                ContentView()
+                ConnectionView()
                     .onAppear {
                         reloadToken()
                     }
@@ -45,8 +45,7 @@ struct SwaquAppliApp: App {
                 if (httpResponse.statusCode == 200) {
                     do {
                         let decoder = JSONDecoder()
-                        let me = try decoder.decode(Swallower.self, from: data)
-                        print("me \(me.username), \(me.id), \(me.token)")
+                        let me = try decoder.decode(SwallowerResponse.self, from: data)
                         jwt = me.token
                         DispatchQueue.main.async {
                             navigateToHomeView = true
