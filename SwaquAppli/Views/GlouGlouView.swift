@@ -15,8 +15,14 @@ struct GlouGlouView: View {
             VStack{
                 Text("Tu as bu...")
                     .padding()
+                    .font(Font.custom("Extra Light" ,size: 40))
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
                 Text("2 litres aujourd'hui !")
                     .padding()
+                    .font(.system(size: 40))
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
                 Text("C'est pas assez... BOIS de l'H2O dans :")
                 
                 Button(action: {
@@ -24,7 +30,7 @@ struct GlouGlouView: View {
                             // Vous pouvez ajouter votre propre code ici
                             print("Le bouton a été pressé")
                         }) {
-                            Text("Un pot de motarde amora")
+                            Text("Un pot de moutarde amora")
                                 .font(.headline)
                                 .padding()
                                 .background(Color.init(red:23/255,green: 54/255, blue: 99/255))
@@ -82,7 +88,9 @@ struct GlouGlouView: View {
                                 .cornerRadius(10)
                         }
                         .frame(maxWidth: .infinity)
-            }.padding()
+            }
+            .frame(maxWidth: .infinity)
+            .padding()
         }
         
     }

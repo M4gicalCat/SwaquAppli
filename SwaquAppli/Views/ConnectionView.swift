@@ -43,8 +43,8 @@ struct ConnectionView: View {
                         .padding(.bottom, 60)
                 }
                 
-                Button(action: qlqchose) {
-                    Text("Pas de compte ? Créez-en un !")
+                NavigationLink(destination: CreateAccountView()) {
+                    Text("Pas de compte ? CrÃ©ez-en un !")
                         .foregroundColor(Color.white)
                         .underline()
                 }

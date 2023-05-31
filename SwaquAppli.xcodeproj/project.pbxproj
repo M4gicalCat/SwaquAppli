@@ -16,6 +16,8 @@
 		48A3A02229D46D200035D188 /* GlouGlouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A3A02129D46D200035D188 /* GlouGlouView.swift */; };
 		D146BCFF2A277397006AD6D5 /* Swallower.swift in Sources */ = {isa = PBXBuildFile; fileRef = D146BCFE2A277397006AD6D5 /* Swallower.swift */; };
 		D146BD012A278C54006AD6D5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D146BD002A278C54006AD6D5 /* .gitignore */; };
+		D146BD032A2790A9006AD6D5 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D146BD022A2790A9006AD6D5 /* CreateAccountView.swift */; };
+		D146BD052A2790E6006AD6D5 /* StatGlouGlouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D146BD042A2790E6006AD6D5 /* StatGlouGlouView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		48A3A02129D46D200035D188 /* GlouGlouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlouGlouView.swift; sourceTree = "<group>"; };
 		D146BCFE2A277397006AD6D5 /* Swallower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swallower.swift; sourceTree = "<group>"; };
 		D146BD002A278C54006AD6D5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D146BD022A2790A9006AD6D5 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		D146BD042A2790E6006AD6D5 /* StatGlouGlouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatGlouGlouView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				48A3A01F29D468A30035D188 /* ConnectionView.swift */,
 				48A3A02129D46D200035D188 /* GlouGlouView.swift */,
 				484B137B2A02AD1C00C8B5B5 /* Test.swift */,
+				D146BD022A2790A9006AD6D5 /* CreateAccountView.swift */,
+				D146BD042A2790E6006AD6D5 /* StatGlouGlouView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -172,8 +178,10 @@
 				D146BCFF2A277397006AD6D5 /* Swallower.swift in Sources */,
 				48A3A01229D460EA0035D188 /* ContentView.swift in Sources */,
 				48A3A02029D468A30035D188 /* ConnectionView.swift in Sources */,
+				D146BD032A2790A9006AD6D5 /* CreateAccountView.swift in Sources */,
 				484B137C2A02AD1C00C8B5B5 /* Test.swift in Sources */,
 				48A3A02229D46D200035D188 /* GlouGlouView.swift in Sources */,
+				D146BD052A2790E6006AD6D5 /* StatGlouGlouView.swift in Sources */,
 				48A3A01029D460EA0035D188 /* SwaquAppliApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
