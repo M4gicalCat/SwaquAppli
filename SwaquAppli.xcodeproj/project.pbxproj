@@ -15,6 +15,7 @@
 		48A3A02029D468A30035D188 /* ConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A3A01F29D468A30035D188 /* ConnectionView.swift */; };
 		48A3A02229D46D200035D188 /* GlouGlouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A3A02129D46D200035D188 /* GlouGlouView.swift */; };
 		D146BCFF2A277397006AD6D5 /* Swallower.swift in Sources */ = {isa = PBXBuildFile; fileRef = D146BCFE2A277397006AD6D5 /* Swallower.swift */; };
+		D146BD012A278C54006AD6D5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D146BD002A278C54006AD6D5 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		48A3A01F29D468A30035D188 /* ConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionView.swift; sourceTree = "<group>"; };
 		48A3A02129D46D200035D188 /* GlouGlouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlouGlouView.swift; sourceTree = "<group>"; };
 		D146BCFE2A277397006AD6D5 /* Swallower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swallower.swift; sourceTree = "<group>"; };
+		D146BD002A278C54006AD6D5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 		48A3A00329D460EA0035D188 = {
 			isa = PBXGroup;
 			children = (
+				D146BD002A278C54006AD6D5 /* .gitignore */,
 				48A3A00E29D460EA0035D188 /* SwaquAppli */,
 				48A3A00D29D460EA0035D188 /* Products */,
 			);
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48A3A01729D460EC0035D188 /* Preview Assets.xcassets in Resources */,
+				D146BD012A278C54006AD6D5 /* .gitignore in Resources */,
 				48A3A01429D460EC0035D188 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
