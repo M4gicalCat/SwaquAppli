@@ -12,7 +12,10 @@ struct ConnectionView: View {
     @State private var userPassword: String = ""
     @AppStorage("jwt") var jwt: String = ""
     @State var connected = false
-    
+    @State private var showAlert = false
+    @State private var alertTitle = ""
+    @State private var alertMessage = ""
+
     var body: some View {
         if (connected) {
             GlouGlouView()
@@ -32,23 +35,13 @@ struct ConnectionView: View {
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .multilineTextAlignment(.center)
                         .padding()
+
                     SecureField("Mot de passe", text: $userPassword)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .multilineTextAlignment(.center)
                         .padding()
                     
                     Spacer()
-                    
-//                    NavigationLink(destination: GlouGlouView()){
-//                        Text("Connexion")
-//                            .frame(width: 300, height: 50)
-//                            .background(Color.init(red:23/255,green: 54/255, blue: 99/255))
-//                            .cornerRadius(10)
-//                            .foregroundColor(.white)
-//                            .padding(.bottom, 60)
-//
-//
-//                    }
                     
                     Button(action: login) {
                         Text("Connexion")
@@ -66,12 +59,21 @@ struct ConnectionView: View {
                     }
                     
                 }.background(Color.init(red:27/255, green: 87/255, blue: 178/255))
+                .alert(isPresented: $showAlert) {
+                    Alert(
+                        title: Text(alertTitle),
+                        message: Text(alertMessage),
+                        dismissButton: .default(Text("OK"))
+                    )
+                }
             }
         }
     }
     func login() {
         if userName.isEmpty || userPassword.isEmpty {
-            // todo show alert
+            showAlert = true
+            alertTitle = "Erreur"
+            alertMessage = "Veuillez remplir tous les champs"
             return
         }
         guard let url = URL(string: "https://swaquapi.pfaisand.fr/auth/login?username=\(userName)&password=\(userPassword)") else {
@@ -83,17 +85,17 @@ struct ConnectionView: View {
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
-    //                    showAlert = true
-    //                    alertTitle = "Une erreur s'est produite"
-    //                    alertMessage = "Veuillez réessayer"
+                showAlert = true
+                alertTitle = "Une erreur s'est produite"
+                alertMessage = "Veuillez réessayer"
                 print("error: \(error.localizedDescription)")
                 return
             }
 
             guard let data = data else {
-    //                    showAlert = true
-    //                    alertTitle = "Erreur"
-    //                    alertMessage = "Une erreur est survenue, veuillez réessayer 0"
+                showAlert = true
+                alertTitle = "Erreur"
+                alertMessage = "Une erreur est survenue, veuillez réessayer 0"
                 return
             }
             
@@ -111,29 +113,27 @@ struct ConnectionView: View {
                         
                     } catch let error {
                         print(error.localizedDescription)
-    //                            showAlert = true
-    //                            alertTitle = "Erreur"
-    //                            alertMessage = "Une erreur est survenue, veuillez réessayer 1"
+                            showAlert = true
+                            alertTitle = "Erreur"
+                            alertMessage = "Une erreur est survenue, veuillez réessayer 1"
                         return
                     }
                 } else {
                     do {
                         let errorResponse = try decoder.decode(AuthError.self, from: data)
                         print("error: \(errorResponse.message)")
-    //                            showAlert = true
-    //                            alertTitle = "Erreur"
-    //                            alertMessage = errorResponse.message
+                            showAlert = true
+                            alertTitle = "Erreur"
+                            alertMessage = errorResponse.message
                         return
                     } catch {
-    //                            showAlert = true
-    //                            alertTitle = "Erreur"
-    //                            alertMessage = "Une erreur est survenue, veuillez réessayer 2"
+                        showAlert = true
+                        alertTitle = "Erreur"
+                        alertMessage = "Une erreur est survenue, veuillez réessayer 2"
                     }
-                    
                 }
             }
         }.resume()
-
     }
 }
 
